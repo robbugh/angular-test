@@ -12,7 +12,7 @@
   </head>
 
   <body>
-     <div ng-view ng-controller="MainCtrl"></div>
+     <div ng-view></div>
      <r:layoutResources/>    
   </body>
 </html>

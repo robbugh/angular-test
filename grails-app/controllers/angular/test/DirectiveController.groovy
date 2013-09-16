@@ -8,10 +8,8 @@ class DirectiveController {
         log.debug "d1"
         render """\
 <div>
-        <h1>Directive-1</h1>
-        <select ng-model="view" ng-options="v for v in views"></select>
-        <br>
-        <inner template="d4"/>
+        <h1>Template: D1</h1>
+        <inner name="D1" templates="['d4', 'd5', 'd6']"/>
 </div>
 """
     }
@@ -20,10 +18,8 @@ class DirectiveController {
         log.debug "d2"
        render """\
 <div>
-        <h1>Directive-2</h1>
-        <select ng-model="view" ng-options="v for v in views"></select>
-        <br>
-        <inner template="d4"/>
+        <h1>Template: D2</h1>
+        <inner name="D2" templates="['d4', 'd5', 'd6']"/>
 </div>
 """
     }
@@ -32,10 +28,8 @@ class DirectiveController {
         log.debug "d3"
        render """\
 <div>
-        <h1>Directive-3</h1>
-        <select ng-model="view" ng-options="v for v in views"></select>
-        <br>
-        <inner template="d4"/>
+        <h1>Template: D3</h1>
+        <inner name="D3" templates="['d4', 'd5', 'd6']"/>
 </div>
 """    }
     
@@ -43,8 +37,7 @@ class DirectiveController {
         log.debug "d4"
        render """\
 <div>
-        <h1>Directive-4</h1>
-        <select ng-model="view" ng-options="v for v in views"></select>
+        <h1>Template: D4</h1>
 </div>
 """
     }
@@ -53,8 +46,7 @@ class DirectiveController {
         log.debug "d5"
        render """\
 <div>
-        <h1>Directive-5</h1>
-        <select ng-model="view" ng-options="v for v in views"></select>
+        <h1>Template: D5</h1>
 </div>
 """
     }
@@ -63,8 +55,7 @@ class DirectiveController {
         log.debug "d6"
        render """\
 <div>
-        <h1>Directive-6</h1>
-        <select ng-model="view" ng-options="v for v in views"></select>
+        <h1>Template: D6</h1>
 </div>
 """
     }
