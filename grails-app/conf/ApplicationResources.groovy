@@ -16,9 +16,9 @@ modules = {
         resource url:'js/application.js'
     }
 
-    slui {
+    myApp {
         dependsOn 'jquery, angular, angularResource'
-        resource url: 'js/slui/app.js'
+        resource url: 'js/app.js'
     }
     
     angularResource {
